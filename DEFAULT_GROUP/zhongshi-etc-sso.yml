@@ -1,0 +1,11 @@
+application-port: 1000
+
+application-project-name: sso
+
+application-datasource-jdbc-url: 
+application-datasource-jdbc-username: 
+application-datasource-jdbc-password: 
+
+application-rpc-service-name: 
+
+application-project-whitelist: /oauth/check_token,/test

@@ -1,0 +1,16 @@
+knife4j:
+  enable: true
+  # production: true
+swagger:
+  base-package: com.zhongshi.${application-project-name}.api
+  title: "zhongshi-${application-project-name}服务"
+  description: zhongshi-etc-service-${application-project-name}
+  version: 1.0
+  terms-of-service-url: www.zhongshi.com
+  authorization:
+    name: Authorization
+    key-name: Authorization
+    auth-regex: ^.*$
+  contact:
+    name: "中视信息科技"
+    email: 1095071913@qq.com

@@ -1,0 +1,22 @@
+mybatis-plus:
+  mapper-locations: classpath:com/zhongshi/${application-project-name}/mapper/*.xml
+  configuration: 
+    map-underscore-to-camel-case: false
+    # log-impl: com.zhongshi.mybatisplus.config.MybatisPlusLog
+  # config-location:
+  # classpath:/mapper/*Mapper.xml
+  #type-aliases-package: com.zhongshi.${application-project-name}
+  global-config: 
+    refresh: true
+    banner: false
+    db-config:
+      db-type: mysql
+      id-type: AUTO
+      field-strategy: NOT_NULL
+      capital-mode: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+mybatis:
+  configuration:
+    cache-enabled: false

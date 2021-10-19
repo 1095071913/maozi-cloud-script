@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    stream:
+      rocketmq:
+        binder:
+          access-key: 
+          secret-key: 
+          name-server: 
+rocketmq:
+  instance:
+    id: 
+    name: 

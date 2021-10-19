@@ -1,0 +1,30 @@
+application-port: 8000
+
+application-project-name: bootadmin
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+      
+  boot:
+    admin:
+      discovery: 
+        services: zhongshi-etc-*
+      ui:
+        external-views:
+        
+          - label: "NACOS"
+            url: ""
+            iframe: true
+            order: 2001
+
+          - label: "SENTINEL"
+            url: "http://localhost:8080"
+            iframe: true
+            order: 2002
+
+          - label: "SKYWALKING"
+            url: ""
+            iframe: true
+            order: 2003

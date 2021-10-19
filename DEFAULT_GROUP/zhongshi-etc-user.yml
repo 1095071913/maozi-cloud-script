@@ -1,0 +1,11 @@
+application-port: 2000
+
+application-project-name: user
+
+application-datasource-jdbc-url: 
+application-datasource-jdbc-username: 
+application-datasource-jdbc-password: 
+
+application-rpc-service-name: 
+
+application-project-whitelist: /user/login,/user/userRegister,/test2,/test1
