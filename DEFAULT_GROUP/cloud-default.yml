@@ -10,8 +10,6 @@ spring:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
     default-property-inclusion: non_null
-  application:
-    name: zhongshi-etc-${application-project-name}
 
 feign:
   okhttp: 
@@ -23,6 +21,7 @@ feign:
 
 
 logging: 
+  test: OFF
   level: 
     root: ERROR
     com.zhongshi: INFO

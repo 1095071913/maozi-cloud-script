@@ -1,11 +1,7 @@
-application-port: 2000
-
-application-project-name: user
+application-port: 3000
 
 application-datasource-jdbc-url: localhost:3306/zhongshi-test-db
 application-datasource-jdbc-username: root
 application-datasource-jdbc-password: password
 
-application-rpc-service-name: 
-
-application-project-whitelist: /user/login,/user/userRegister
+application-project-whitelist: /test

@@ -1,18 +1,26 @@
+actable: 
+  database: 
+    type: mysql
+  table: 
+    auto: update
+  model: 
+    pack: com.zhongshi.*.domain
+
+
 mybatis-plus:
-  mapper-locations: classpath:com/zhongshi/${application-project-name}/mapper/*.xml
+  mapper-locations: classpath:com/zhongshi/*/mapper/*.xml,classpath*:com/gitee/sunchenbin/mybatis/actable/mapping/*/*.xml
+  typeEnumsPackage: com.zhongshi.*.enums
   configuration: 
-    map-underscore-to-camel-case: false
-    # log-impl: com.zhongshi.mybatisplus.config.MybatisPlusLog
-  # config-location:
-  # classpath:/mapper/*Mapper.xml
-  #type-aliases-package: com.zhongshi.${application-project-name}
+    map-underscore-to-camel-case: true
+    log-impl: com.zhongshi.mybatisplus.config.MybatisPlusLog
   global-config: 
-    refresh: true
+    refresh: false
     banner: false
     db-config:
       db-type: mysql
       id-type: AUTO
       field-strategy: NOT_NULL
+      column-like: false
       capital-mode: true
       logic-delete-value: 1
       logic-not-delete-value: 0

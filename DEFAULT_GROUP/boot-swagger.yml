@@ -2,9 +2,9 @@ knife4j:
   enable: true
   # production: true
 swagger:
-  base-package: com.zhongshi.${application-project-name}.api
-  title: "zhongshi-${application-project-name}服务"
-  description: zhongshi-etc-service-${application-project-name}
+  base-package: com.zhongshi.*.api
+  title: "${spring.application.name}服务"
+  description: ${spring.application.name}
   version: 1.0
   terms-of-service-url: www.zhongshi.com
   authorization:

@@ -15,7 +15,7 @@ spring:
         external-views:
         
           - label: "NACOS"
-            url: ""
+            url: "http://localhost:8848"
             iframe: true
             order: 2001
 
@@ -25,6 +25,6 @@ spring:
             order: 2002
 
           - label: "SKYWALKING"
-            url: ""
+            url: "http://localhost:8848"
             iframe: true
             order: 2003

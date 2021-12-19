@@ -2,9 +2,9 @@ application-port: 1000
 
 application-project-name: sso
 
-application-datasource-jdbc-url: 
-application-datasource-jdbc-username: 
-application-datasource-jdbc-password: 
+application-datasource-jdbc-url: localhost:3306/zhongshi-test-db
+application-datasource-jdbc-username: root
+application-datasource-jdbc-password: password
 
 application-rpc-service-name: 
 
