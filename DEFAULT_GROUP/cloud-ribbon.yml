@@ -1,6 +1,0 @@
-ribbon:
-  ConnectTimeout: 200
-  ReadTimeout: 200
-  OkToRetryOnAllOperations: true
-  MaxAutoRetriesNextServer: 2
-  maxAutoRetries: 0
