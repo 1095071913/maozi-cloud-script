@@ -12,7 +12,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -38,4 +37,25 @@ target
 # Spring Tool Suits project environment #
 .sts4-cache
 
+# Maven
 .flattened-pom.xml
+
+# Devops
+**/CURRENT_BRANCH
+**/CURRENT_SHA
+
+# data
+appendonly.aof
+dump.rdb
+*.sdi
+*.ibt
+*.ibd
+undo_*
+*.dblwr
+binlog.*
+*.pem
+*.CSV
+*.CSM
+ib*
+*.sock
+auto.cnf

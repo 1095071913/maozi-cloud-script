@@ -1,0 +1,30 @@
+version: "3.7"
+services:
+
+  maozi-cloud-service-system:
+    image: maozi-cloud-service-system:laster
+    container_name: maozi-cloud-service-system
+    restart: always
+    ports:
+      - 2000:2000
+      - 20881:20881
+    environment:
+      environment: test
+      NACOS_CONFIG_SERVER: maozi-cloud-nacos:8848
+
+  maozi-cloud-service-oauth:
+    image: maozi-cloud-service-oauth:laster
+    container_name: maozi-cloud-service-oauth
+    restart: always
+    ports:
+      - 1000:1000
+      - 20880:20880
+    environment:
+      environment: test
+      NACOS_CONFIG_SERVER: maozi-cloud-nacos:8848
+
+
+networks:
+  default:
+    external:
+      name: maozi-cloud-network

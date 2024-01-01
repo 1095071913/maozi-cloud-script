@@ -1,0 +1,15 @@
+FROM maozi-cloud-base-jdk:1.0.0
+
+ENV APPLICATION_NAME=maozi-cloud-gateway
+ENV APPLICATION_ABBREVIATION=gateway
+ENV APPLICATION_PORT=10000
+
+RUN mkdir -p /application/${APPLICATION_NAME}
+
+WORKDIR /application/${APPLICATION_NAME}
+
+COPY ./maozi-cloud-basics-${APPLICATION_ABBREVIATION}.jar ./
+
+CMD java -server -Xms512m -Xmx512m -Xmn256m -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m --add-opens java.base/java.math=ALL-UNNAMED  --add-opens java.base/java.lang=ALL-UNNAMED  --add-opens java.base/java.lang.reflect=ALL-UNNAMED -jar maozi-cloud-basics-${APPLICATION_ABBREVIATION}.jar
+
+EXPOSE ${APPLICATION_PORT}
