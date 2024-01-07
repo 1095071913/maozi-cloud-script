@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: "password"
     volumes:
-      - ./maozi-cloud-mysql/conf/my.cnf:/etc/mysql/my.cnf
+#      - ./maozi-cloud-mysql/conf/my.cnf:/etc/mysql/my.cnf
       - ./maozi-cloud-mysql/data/mysql/:/var/lib/mysql/
     ports:
       - 3306:3306
