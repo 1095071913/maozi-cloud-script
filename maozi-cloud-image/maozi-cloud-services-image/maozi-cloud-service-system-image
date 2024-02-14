@@ -11,7 +11,7 @@ WORKDIR /application/${APPLICATION_NAME}
 
 COPY maozi-cloud-service-${APPLICATION_ABBREVIATION}.jar ./
 
-CMD java -server -DDUBBO_IP_TO_REGISTRY=172.31.128.1 -Xms512m -Xmx512m -Xmn256m -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m --add-opens java.base/java.math=ALL-UNNAMED  --add-opens java.base/java.lang=ALL-UNNAMED  --add-opens java.base/java.lang.reflect=ALL-UNNAMED -jar maozi-cloud-service-${APPLICATION_ABBREVIATION}.jar
+CMD java -server -DDUBBO_IP_TO_REGISTRY=172.31.128.1 -Xms256m -Xmx256m -Xmn128m -XX:MetaspaceSize=256m -XX:MaxMetaspaceSize=256m -XX:+UseSerialGC -Xss512k -XX:MaxRAM=200m --add-opens java.base/java.math=ALL-UNNAMED  --add-opens java.base/java.lang=ALL-UNNAMED  --add-opens java.base/java.lang.reflect=ALL-UNNAMED -jar maozi-cloud-service-${APPLICATION_ABBREVIATION}.jar
 
 EXPOSE ${APPLICATION_PORT}
 EXPOSE ${APPLICATION_DUBBO_PORT}
